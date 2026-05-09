@@ -1,0 +1,160 @@
+{
+  "info": {
+    "_postman_id": "c74d0267-b630-4e3e-a3aa-0985b1d474ab",
+    "name": "SmartPark API Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "19138506"
+  },
+  "item": [
+    {
+      "name": "RegisterParkingLot",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"lotId\": \"Lot1\",\r\n    \"location\": \"Quezon\",\r\n    \"capacity\": 2\r\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/parking/api/RegisterParkingLot",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "parking",
+            "api",
+            "RegisterParkingLot"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "RegisterVehicle",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"licensePlate\": \"ABC-123\",\r\n  \"type\": \"MOTORCYCLE\",\r\n  \"ownerName\": \"Ron\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/parking/api/RegisterVehicle",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "parking",
+            "api",
+            "RegisterVehicle"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ParkingLots status",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "CheckIn",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/parking/api/CheckIn/Lot1/ABC-123",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "parking",
+            "api",
+            "CheckIn",
+            "Lot1",
+            "ABC-123"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Checkout",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/parking/api/Checkout/ABC-123",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "parking",
+            "api",
+            "Checkout",
+            "ABC-123"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetAllVehicles",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/parking/api/GetAllVehicles",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "parking",
+            "api",
+            "GetAllVehicles"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetAllVehiclesInLot",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/parking/api/GetAllVehiclesInLot/Lot 1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "parking",
+            "api",
+            "GetAllVehiclesInLot",
+            "Lot 1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
