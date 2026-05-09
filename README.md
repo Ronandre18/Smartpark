@@ -20,10 +20,6 @@ mvn clean install
 # bash
 mvn spring-boot:run
 
-# Test Instructions
-# bash
-mvn test
-
 # API Testing
 Postman collection included in the github
 
